@@ -1,85 +1,40 @@
 "use strict";
 
 //==== Task-1 ====
-
-var task1 = Number(prompt("<Task-1> Enter your number", 0));
-
-// Один варінт
-// task1 = task1 > 0 ? task1 + 1 : task1 < 0 ? task1 - 2 : 10;
-
-// console.log("task1: " + task1);
-
-// Другий варіант
-if (task1 > 0) {
-  task1 += 1;
-} else if (task1 < 0) {
-  task1 -= 2;
-} else {
-  task1 = 10;
-}
-
-console.log("task1: " + task1);
+var a = prompt("Введіть довжину стороні квадрата", 10);
+alert("Площа квадрата: " + a * a);
 
 //==== Task-2 ====
-
-var task2 = Number(prompt("<Task-2> Enter your number", 0));
-
-if (task2 === 0) {
-  console.log("Нульове число");
-} else if (task2 % 2 === 0) {
-  if (task2 > 0) {
-    console.log("Додатнє парне");
-  } else {
-    console.log("Від'ємне парне");
-  }
-} else if (task2 % 2 !== 0) {
-  if (task2 > 0) {
-    console.log("Додатнє непарне");
-  } else {
-    console.log("Від'ємне непарне");
-  }
-}
+var natural = 29;
+var first = parseInt(natural / 10);
+var second = natural % 10;
+alert("first: " + first + "\n" + "second: " + second);
 
 //==== Task-3 ====
-
-var task3 = [12, 12, 12, 99];
-
-if (task3[0] === task3[1] && task3[0] === task3[2]) {
-  console.log(4);
-} else if (task3[1] === task3[2] && task3[1] === task3[3]) {
-  console.log(1);
-} else if (task3[2] === task3[3] && task3[2] === task3[0]) {
-  console.log(2);
+var k = 42;
+var m = 3;
+if (k > 2 && m <= 3) {
+  alert("Істина");
 } else {
-  console.log(3);
+  alert("Хиба");
 }
-
 //==== Task-4 ====
+var z = 13;
+var x = 90;
+var c = 123;
 
-var task4 = Number(prompt("<Task-4> Enter your number", 0));
+if (z < x && x < c) {
+  alert("Істина");
+} else {
+  alert("Хиба");
+}
+//==== Task-5 ====
 
-switch (task4) {
-  case 1: {
-    console.log("Погано");
-    break;
-  }
-  case 2: {
-    console.log("Незадовільно");
-    break;
-  }
-  case 3: {
-    console.log("Задовільно");
-    break;
-  }
-  case 4: {
-    console.log("Добре");
-    break;
-  }
-  case 5: {
-    console.log("Відмінно");
-    break;
-  }
-  default: {
-    console.log("Помилка");
-  }
+var q = 233;
+var test1 = q / 100;
+var test2 = q % 2;
+if (test1 >= 1 && test1 < 10 && test2 !== 0) {
+  alert("Істина");
+} else {
+  alert("Хиба");
 }
